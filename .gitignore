@@ -1,0 +1,6 @@
+.env
+trace.jsonl
+plan.json
+PLAN.md
+node_modules/
+__pycache__/
