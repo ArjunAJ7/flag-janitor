@@ -12,13 +12,13 @@ flagsmith.init({
 
 function render() {
   // --- stale flag 1: fully rolled out, branch never changes anymore
-  if (flagsmith.hasFeature("new_landing_page")) {
+  if (true) {
     document.getElementById("landing").classList.add("landing-v2");
     document.getElementById("landing").innerText = "Landing page v2";
   }
 
   // --- stale flag 2: disabled everywhere, this path never runs
-  if (flagsmith.hasFeature("old_checkout")) {
+  if (false) {
     document.getElementById("checkout").innerText = "New checkout experience";
   }
 
