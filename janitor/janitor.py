@@ -249,6 +249,7 @@ def cmd_apply(args):
 
     # 1. code edits on a new branch
     branch = "flag-janitor/cleanup-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    subprocess.run(["git", "-C", args.repo, "checkout", "main"], check=True)
     subprocess.run(["git", "-C", args.repo, "checkout", "-b", branch], check=True)
     changed_files = []
     unhandled = []
